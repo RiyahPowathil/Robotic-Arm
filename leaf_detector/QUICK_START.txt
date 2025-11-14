@@ -1,0 +1,36 @@
+LEAF DETECTION STREAMING SERVER
+================================
+
+START SERVER (from project root)
+--------------------------------
+cd /home/shuttle_01/Desktop/Learning/Robotic\ Arm
+python src/stream_server.py
+
+OR use npm:
+npm run stream
+
+START REACT APP
+---------------
+npm start
+
+Then open browser: http://localhost:8080
+
+ACCESS STREAM DIRECTLY (Your IP: 192.168.31.159)
+-------------------------------------------------
+http://192.168.31.159:5000/
+
+VIEW FROM:
+- React App (http://localhost:8080)
+- Browser (any device on network)
+- VLC (Open Network Stream)
+- OBS (Browser Source)
+- OpenCV: cv2.VideoCapture('http://localhost:5000/')
+
+OPTIONS
+-------
+python src/stream_server.py --conf 0.4          # Higher confidence
+python src/stream_server.py --port 8080         # Different port
+python src/stream_server.py --url http://...    # Different camera
+
+STOP: Ctrl+C
+

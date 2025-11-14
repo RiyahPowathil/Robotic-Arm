@@ -1,0 +1,6 @@
+names:
+- leaf
+nc: 1
+test: /home/shuttle_01/Desktop/leaf_detector/yolo_dataset/test/images
+train: /home/shuttle_01/Desktop/leaf_detector/yolo_dataset/train/images
+val: /home/shuttle_01/Desktop/leaf_detector/yolo_dataset/valid/images
